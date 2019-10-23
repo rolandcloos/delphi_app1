@@ -4,7 +4,8 @@ interface
 
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
-  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Data.DBXMySQL, Data.DB,
+  Data.SqlExpr;
 
 type
   TForm1 = class(TForm)
@@ -15,6 +16,8 @@ type
     Edit2: TEdit;
     lblError: TLabel;
     Label3: TLabel;
+    mySQLConnection: TSQLConnection;
+    procedure btnLoginClick(Sender: TObject);
   private
     { Private-Deklarationen }
   public
@@ -27,5 +30,10 @@ var
 implementation
 
 {$R *.dfm}
+
+procedure TForm1.btnLoginClick(Sender: TObject);
+begin
+      Label2.Caption := mySQLConnection.ConnectionData;
+end;
 
 end.

@@ -30,8 +30,8 @@ object Form1: TForm1
   object lblError: TLabel
     Left = 104
     Top = 120
-    Width = 323
-    Height = 50
+    Width = 3
+    Height = 13
     Color = clRed
     ParentColor = False
   end
@@ -49,6 +49,7 @@ object Form1: TForm1
     Height = 25
     Caption = 'btnLogin'
     TabOrder = 0
+    OnClick = btnLoginClick
   end
   object Edit1: TEdit
     Left = 232
@@ -65,5 +66,25 @@ object Form1: TForm1
     Height = 21
     TabOrder = 2
     Text = 'Edit2'
+  end
+  object mySQLConnection: TSQLConnection
+    ConnectionName = 'MySQLConnection'
+    DriverName = 'MySQL'
+    KeepConnection = False
+    Params.Strings = (
+      'DriverName=MySQL'
+      'HostName=ServerName'
+      'Database=DBNAME'
+      'User_Name=user'
+      'Password=password'
+      'ServerCharSet='
+      'BlobSize=-1'
+      'ErrorResourceFile='
+      'LocaleCode=0000'
+      'Compressed=False'
+      'Encrypted=False'
+      'ConnectTimeout=60')
+    Left = 40
+    Top = 184
   end
 end
