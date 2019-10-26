@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.277,C:\Users\rolan\OneDrive\_projekte\__Delphi\delphi_app1\dm_RemoteSQL_net1.pas=C:\Users\rolan\OneDrive\_projekte\__Delphi\delphi_app1\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.088,=C:\Users\rolan\OneDrive\_projekte\__Delphi\delphi_app1\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.467,=C:\Users\rolan\OneDrive\_projekte\__Delphi\delphi_app1\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.278,C:\Users\rolan\OneDrive\_projekte\__Delphi\delphi_app1\dm_RemoteSQL_net1.dfm=C:\Users\rolan\OneDrive\_projekte\__Delphi\delphi_app1\Unit2.dfm</Transaction>
+    <Transaction>2019.10.26 14:47:13.395,C:\Users\rolan\OneDrive\_projekte\__Delphi\delphi_app1\Unit2.pas=</Transaction>
+  </Transactions>  <ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="Unit1.pas"/>
+    <File Path="Unit1.dfm"/>
+  </ProjectSortOrder>
+</BorlandProject>

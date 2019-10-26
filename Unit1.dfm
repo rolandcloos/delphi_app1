@@ -57,7 +57,6 @@ object Form1: TForm1
     Width = 121
     Height = 21
     TabOrder = 1
-    Text = 'cloos'
   end
   object txtPassword: TEdit
     Left = 232
@@ -66,7 +65,6 @@ object Form1: TForm1
     Height = 21
     PasswordChar = '*'
     TabOrder = 2
-    Text = 'klejd264'
   end
   object stStatus: TStatusBar
     Left = 0
@@ -78,22 +76,6 @@ object Form1: TForm1
       item
         Width = 50
       end>
-  end
-  object StringGrid1: TStringGrid
-    Tag = 2
-    Left = 72
-    Top = 296
-    Width = 320
-    Height = 120
-    ColCount = 2
-    FixedCols = 0
-    RowCount = 2
-    ParentShowHint = False
-    ShowHint = True
-    TabOrder = 4
-    ColWidths = (
-      64
-      64)
   end
   object FDConnection1: TFDConnection
     ConnectionName = 'mySQL'
@@ -116,44 +98,5 @@ object Form1: TForm1
       'SELECT name, password FROM user;')
     Left = 32
     Top = 174
-  end
-  object BindSourceDB1: TBindSourceDB
-    DataSet = FDQuery1
-    ScopeMappings = <>
-    Left = 240
-    Top = 272
-  end
-  object BindingsList1: TBindingsList
-    Methods = <>
-    OutputConverters = <>
-    PromptDeleteUnused = False
-    Left = 20
-    Top = 5
-    object LinkControlToField1: TLinkControlToField
-      Category = 'Schnelle Bindungen'
-      DataSource = BindSourceDB1
-      FieldName = 'name'
-      Control = txtUser
-      Track = True
-    end
-    object LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource
-      Category = 'Schnelle Bindungen'
-      DataSource = BindSourceDB1
-      GridControl = StringGrid1
-      Columns = <
-        item
-          MemberName = 'name'
-        end
-        item
-          MemberName = 'password'
-        end>
-    end
-    object LinkControlToField2: TLinkControlToField
-      Category = 'Schnelle Bindungen'
-      DataSource = BindSourceDB1
-      FieldName = 'password'
-      Control = txtPassword
-      Track = True
-    end
   end
 end

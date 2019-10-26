@@ -26,12 +26,6 @@ type
     stStatus: TStatusBar;
     FDConnection1: TFDConnection;
     FDQuery1: TFDQuery;
-    StringGrid1: TStringGrid;
-    BindSourceDB1: TBindSourceDB;
-    BindingsList1: TBindingsList;
-    LinkControlToField1: TLinkControlToField;
-    LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource;
-    LinkControlToField2: TLinkControlToField;
     procedure btnLoginClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
   private
